@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+     justify-content: center;
+}
+body{
+    background: hsl(229, 57%, 11%);
+}
+
+.container{
+    margin: 190px;
+    display: grid;
+    grid-template-columns: 420px 600px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    background: hsl(229, 57%, 11%);
+
+} 
+
+/* Box #1 */
+.box-1{
+    border-radius: 10px 100px 10px 10px;
+    background: hsl(228, 56%, 26%);
+    height: 220px;
+    width: 396px;
+    margin-left: 0;
+    margin-right: -15px;
+    margin-top:-25px;
+   
+}
+
+
+.fylo-logo{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.icons{
+    margin-bottom: 50px;
+    margin-left: 48.6px;
+    margin-top: 20px;
+}
+
+.document-icon{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left:15px;
+}
+
+
+.folder-icon{
+     margin-right: 20px;
+    margin-top: 20px;
+    margin-left:8px;
+}
+
+/* Box #2 */
+.box-2{
+    background: hsl(228, 56%, 26%);
+    width: 620px;
+    height: 165px;
+    border-radius: 10px;
+    margin-top: 28.6px;
+   
+}
+.box-2 p{
+    color: #fff;
+    font-size: 14px;
+    
+    
+}
+
+.usage-bar{
+    background:linear-gradient( hsl(6, 100%, 80%), hsl(335, 100%, 65%) );
+    
+}
+
+.attribution { font-size: 11px; text-align: center; color: #fff;}
+.attribution a { color: hsl(228, 45%, 44%); } 
