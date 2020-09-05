@@ -3,115 +3,223 @@
     margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-     justify-content: center;
-}
-body{
-    background: hsl(229, 57%, 11%);
+    justify-content: center;
 }
 
-.container{
-    margin: 248.4px;
-    display: grid;
-    grid-template-columns: 420px 595px;
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    background: hsl(229, 57%, 11%);
+@media (max-width:586px) {
+    body {
+        background: hsl(229, 57%, 11%) url("images/bg-mobile.png") center no-repeat;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
 
-} 
+@media (min-width:1440px) {
+    body {
+        background: hsl(229, 57%, 11%) url("images/bg-desktop.png") no-repeat bottom right;
+        margin-bottom: 489.9px;
+    
+     
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 420px 595px;
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+    }
+}
 
 /* Box #1 */
-.box-1{
+
+.box-1 {
     border-radius: 10px 100px 10px 10px;
     background: hsl(228, 56%, 26%);
     height: 220px;
-    width: 396px;
-    margin-left: 0;
-    margin-right: -15px;
-    margin-top:-25px;
-   
+    width: 350px;
+    position: relative;
+    top: 190px;
+    left: 80px;
 }
 
-.fylo-logo{
+#fylo-logo {
     margin-top: 50px;
     margin-left: 50px;
 }
 
-.icons{
+#hideThis {
+    display: none;
+}
+.icons {
     margin-bottom: 50px;
     margin-left: 48.6px;
     margin-top: 35px;
 }
 
 /* Adds background behind the document icon in the <div> */
-.docu-back{
+
+.docu-back {
     background: hsl(229, 57%, 11%);
     width: 46.6px;
     border-radius: 8px;
-    margin-left:4.6px;
+    margin-left: 4.6px;
 }
 
-.document-icon{
+.document-icon {
     margin-right: 20px;
     margin-top: 10px;
-    margin-left:14.6px;
+    margin-left: 14.6px;
     margin-bottom: 5px;
 }
 
-
 /* Adds background behind the folder icon in the <div> */
-.folder-back{
-        background: hsl(229, 57%, 11%);
-        width: 44.6px;
-        height: 44px;
-        border-radius: 8px;
-        margin-left:80px;
-        margin-top: -44px;
-    }
 
+.folder-back {
+    background: hsl(229, 57%, 11%);
+    width: 44.6px;
+    height: 44px;
+    border-radius: 8px;
+    margin-left: 67px;
+    margin-top: -44px;
+}
 
-.folder-icon{
-   
+.folder-icon {
     margin-top: 12px;
-    margin-left:10.8px;
+    margin-left: 10.8px;
     margin-bottom: 5px;
 }
 
 /* Adds background behind the upload icon in the <div> */
 
-.upload-back{
+.upload-back {
     background: hsl(229, 57%, 11%);
-        width: 44.6px;
-        height: 44px;
-        border-radius: 8px;
-        margin-top:-44px;
+    width: 44.6px;
+    height: 44px;
+    border-radius: 8px;
+    margin-top: -44px;
 }
 
-.upload-icon{
+.upload-icon {
     margin-top: 13.8px;
-    margin-left:10px;
+    margin-left: 10px;
     margin-bottom: 5px;
 }
 
 /* Box #2 */
-.box-2{
+
+.box-2 {
     background: hsl(228, 56%, 26%);
-    width: 620px;
+    width: 540px;
     height: 165px;
     border-radius: 10px;
-    margin-top: 28.6px;
-   
+    position: relative;
+    top: 243px;
+    left: 40px;
 }
-.box-2 p{
+
+.box-2 p {
     color: #fff;
     font-size: 14px;
     margin-top: 40px;
     margin-left: 48px;
     
 }
-.used-GB{
+
+.used-GB {
     font-weight: 700;
 }
 
+/* Custom CSS Style to the usage bar */
 
-.attribution { font-size: 11px; text-align: center; color: #fff;}
-.attribution a { color: hsl(228, 45%, 44%); } 
+.usagebar {
+    background: hsl(229, 57%, 11%);
+    width: 459px;
+    height: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.usagebar .insidebar {
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 339px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 0px;
+    background-position: center;
+}
+
+.usagebar .whiteball{
+    background: #ffffff;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+margin-right: 0;
+}
+
+.limits {
+    font-weight: 700;
+    display: flex;
+    margin-right:-290px;
+    margin-top: -30px;
+}
+
+/* Practicing styling tooltip */
+#tooltip{
+    background-color: #fff;
+    width: 190px;
+    height: 84px;
+    border-radius: 10px 10px 0px 10px;
+    margin-top: -230px;
+    margin-right: 50px;
+}
+
+#tooltip:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+
+
+    border: 30px solid transparent;
+    border-top-color: #ffffff;
+    border-bottom: 0px;
+    border-right:0px;
+    margin-bottom: 120.9px;
+    margin-left: 352px;
+}
+
+#tooltip p{
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    padding-top: 15px;
+    margin-left: 30px;
+    
+}
+
+#tooltip span {
+    color: #0C122C;
+    font-size: 14px;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+
+/* Credit */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 475px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
