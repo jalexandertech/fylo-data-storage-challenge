@@ -17,10 +17,15 @@
     }
 }
 
-@media (min-width:1440px) {
+@media only screen and (min-width:750px) {
     body {
-        background: hsl(229, 57%, 11%) url("images/bg-desktop.png") no-repeat bottom right;
-        margin-bottom: 489.9px;
+        background-image:  url("images/bg-desktop.png");
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 1599px;
+        background-color: hsl(229, 57%, 11%);
+        /* margin-bottom: 489.9px; */
     
      
     }
@@ -40,7 +45,7 @@
     height: 220px;
     width: 350px;
     position: relative;
-    top: 190px;
+    top: 100px;
     left: 80px;
 }
 
@@ -115,7 +120,7 @@
     height: 165px;
     border-radius: 10px;
     position: relative;
-    top: 243px;
+    top: 155px;
     left: 40px;
 }
 
@@ -217,7 +222,7 @@ margin-right: 0;
     text-align: center;
     color: #fff;
     position: relative;
-    top: 475px;
+    top: 455px;
 }
 
 .attribution a {
