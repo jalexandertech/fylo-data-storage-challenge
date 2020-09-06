@@ -119,6 +119,15 @@ left: 20px;
         margin-bottom: 120.9px;
         margin-left: 352px;
     }
+
+    .start{
+        position: relative;
+        right: 20px;
+    }
+    .end{
+        position: relative;
+        left: 150px;
+    }
     .attribution {
         position: relative;
         top: 190px;
