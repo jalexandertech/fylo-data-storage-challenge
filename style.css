@@ -6,34 +6,195 @@
     justify-content: center;
 }
 
-@media (max-width:586px) {
+@media only screen and (max-width: 553px) {
     body {
-        background: hsl(229, 57%, 11%) url("images/bg-mobile.png") center no-repeat;
+        background-image: url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .container {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 630px;
+        grid-template-rows: 400px 260px;
+    }
+    .box-1 {
+        position: relative;
+        top: 120px;
+        left: 5px;
+        height: 220px;
+        width: 325px;
+    }
+  .box-2{
+    width: 325px;
+    height: 165px;
+   position: relative;
+   bottom: 30px;
+  }
+  .usagebar{
+    width: 262px;
+    height: 20px;
+  }
+
+  .usagebar .insidebar{
+    width: 193px;
+    height: 20px;
+}
+.usagebar .whiteball{
+    width: 20px;
+height: 20px;
+}
+#tooltip{
+    border-radius: 10px;
+    position: relative;
+    top: 200px;
+    right: 20px;
+}
+
+.upload-back{
+position: relative;
+left: 20px;
+
+}
+.start{
+    position: relative;
+    right: 20px;
+}
+.end{
+    position: relative;
+    left: 50px;
+}
+
+
+}
+
+@media only screen and (min-width: 554px) {
+    body {
+        background-image: url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 620px;
+        grid-template-rows: 420px 200px;
+    }
+    .box-1 {
+        position: relative;
+        top: 190px;
+        left: 20px;
+        height: 220px;
+        width: 375px;
+    }
+    .box-2 {
+        position: relative;
+        top: 40px;
+     
+        width: 540px;
+    height: 165px;
+    }
+    .usagebar{
+        width: 459px;
+    height: 20px;
+    }
+    .usagebar .insidebar{
+        width: 339px;
+        height: 20px;
+    }
+    .usagebar .whiteball{
+        width: 20px;
+    height: 20px;
+    }
+    #tooltip{
+        border-radius: 10px 10px 0px 10px;
+    }
+    #tooltip:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        border: 30px solid transparent;
+        border-top-color: #ffffff;
+        border-bottom: 0px;
+        border-right: 0px;
+        margin-bottom: 120.9px;
+        margin-left: 352px;
+    }
+    .attribution {
+        position: relative;
+        top: 190px;
     }
 }
 
-@media only screen and (min-width:750px) {
+@media only screen and (min-width:1024px) {
     body {
-        background-image:  url("images/bg-desktop.png");
-        background-position-y: bottom;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 1599px;
+        background-image: url("images/bg-desktop.png");
+        background-position: 0 410px;
         background-color: hsl(229, 57%, 11%);
-        /* margin-bottom: 489.9px; */
-    
-     
     }
     .container {
         display: grid;
         grid-template-columns: 420px 595px;
-        grid-template-rows: 1fr;
+        grid-template-rows: 420px 200px;
         grid-column-gap: 20px;
+    }
+    .box-1 {
+        position: relative;
+        top: 300px;
+        left: 20px;
+        height: 220px;
+    width: 375px;
+    }
+    .box-2 {
+        position: relative;
+        top: 355px;
+        left: 10px;
+        width: 540px;
+    height: 165px;
+    }
+    .usagebar{
+        width: 459px;
+    height: 20px;
+    }
+
+    .usagebar .insidebar{
+        width: 339px;
+        height: 20px;
+    }
+    .usagebar .whiteball{
+        width: 20px;
+    height: 20px;
+    }
+
+    #tooltip{
+        border-radius: 10px 10px 0px 10px;
+    }
+    #tooltip:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        border: 30px solid transparent;
+        border-top-color: #ffffff;
+        border-bottom: 0px;
+        border-right: 0px;
+        margin-bottom: 120.9px;
+        margin-left: 352px;
+    }
+    .attribution {
+        position: relative;
+        top: 265px;
+    }
+}
+
+@media only screen and (min-width:1900px) {
+    body {
+        background-image: url("images/bg-desktop.png");
+        background-position: 0 430px;
+        background-color: hsl(229, 57%, 11%);
+    }
+    .attribution {
+        position: relative;
+        top: 315px;
     }
 }
 
@@ -42,14 +203,10 @@
 .box-1 {
     border-radius: 10px 100px 10px 10px;
     background: hsl(228, 56%, 26%);
-    height: 220px;
-    width: 350px;
-    position: relative;
-    top: 100px;
-    left: 80px;
+    
 }
 
-#fylo-logo {
+.fylo-logo {
     margin-top: 50px;
     margin-left: 50px;
 }
@@ -57,6 +214,7 @@
 #hideThis {
     display: none;
 }
+
 .icons {
     margin-bottom: 50px;
     margin-left: 48.6px;
@@ -86,7 +244,7 @@
     width: 44.6px;
     height: 44px;
     border-radius: 8px;
-    margin-left: 67px;
+    margin-left: 70px;
     margin-top: -44px;
 }
 
@@ -116,12 +274,8 @@
 
 .box-2 {
     background: hsl(228, 56%, 26%);
-    width: 540px;
-    height: 165px;
+    
     border-radius: 10px;
-    position: relative;
-    top: 155px;
-    left: 40px;
 }
 
 .box-2 p {
@@ -129,7 +283,6 @@
     font-size: 14px;
     margin-top: 40px;
     margin-left: 48px;
-    
 }
 
 .used-GB {
@@ -140,68 +293,54 @@
 
 .usagebar {
     background: hsl(229, 57%, 11%);
-    width: 459px;
-    height: 20px;
+    
     border-radius: 20px;
     margin-top: 20px;
 }
 
 .usagebar .insidebar {
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-    width: 339px;
-    height: 20px;
+   
     border-radius: 10px;
     margin-left: 0px;
     background-position: center;
 }
 
-.usagebar .whiteball{
+.usagebar .whiteball {
     background: #ffffff;
-border-radius: 50%;
-width: 20px;
-height: 20px;
-margin-right: 0;
+    border-radius: 50%;
+    
+    margin-right: 0;
 }
 
 .limits {
     font-weight: 700;
     display: flex;
-    margin-right:-290px;
+
     margin-top: -30px;
 }
 
+
+
 /* Practicing styling tooltip */
-#tooltip{
+
+#tooltip {
     background-color: #fff;
     width: 190px;
     height: 84px;
-    border-radius: 10px 10px 0px 10px;
+    
     margin-top: -230px;
     margin-right: 50px;
 }
 
-#tooltip:after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 20%;
 
 
-    border: 30px solid transparent;
-    border-top-color: #ffffff;
-    border-bottom: 0px;
-    border-right:0px;
-    margin-bottom: 120.9px;
-    margin-left: 352px;
-}
-
-#tooltip p{
+#tooltip p {
     font-weight: 700;
     color: #000000;
     font-size: 40px;
     padding-top: 15px;
     margin-left: 30px;
-    
 }
 
 #tooltip span {
@@ -215,14 +354,12 @@ margin-right: 0;
     bottom: 5px;
 }
 
-
 /* Credit */
+
 .attribution {
     font-size: 11px;
     text-align: center;
     color: #fff;
-    position: relative;
-    top: 455px;
 }
 
 .attribution a {
